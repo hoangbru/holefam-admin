@@ -1,102 +1,102 @@
 [
   {
-    "id": 1,
+    "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
     "name": "HTML5",
     "tag": "html5",
     "link": "https://www.w3schools.com/html/default.asp"
   },
   {
-    "id": 2,
+    "id": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
     "name": "CSS3",
     "tag": "css3",
     "link": "https://www.w3schools.com/css/default.asp"
   },
   {
-    "id": 3,
+    "id": "550e8400-e29b-41d4-a716-446655440000",
     "name": "JavaScript",
     "tag": "javascript",
     "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
   },
   {
-    "id": 4,
+    "id": "123e4567-e89b-12d3-a456-426614174000",
     "name": "TypeScript",
     "tag": "typescript",
     "link": "https://www.typescriptlang.org/"
   },
   {
-    "id": 5,
+    "id": "987fcdeb-1234-5678-9012-34567890abcd",
     "name": "React",
     "tag": "react",
     "link": "https://reactjs.org/"
   },
   {
-    "id": 6,
+    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
     "name": "Next.js",
     "tag": "",
     "link": "https://nextjs.org/"
   },
   {
-    "id": 7,
+    "id": "abcdef12-3456-7890-abcd-1234567890ef",
     "name": "Vue.js",
     "tag": "vuejs",
     "link": "https://vuejs.org/"
   },
   {
-    "id": 8,
+    "id": "11112222-3333-4444-5555-666677778884",
     "name": "Angular",
     "tag": "angular",
     "link": "https://angular.io/"
   },
   {
-    "id": 9,
+    "id": "9999aaaa-bbbb-cccc-dddd-eeeeffff0000",
     "name": "Node.js",
     "tag": "nodejs",
     "link": "https://nodejs.org/"
   },
   {
-    "id": 10,
+    "id": "00001111-2222-3333-4444-555566667777",
     "name": "Tailwind CSS",
     "tag": "tailwind-css",
     "link": "https://tailwindcss.com/"
   },
   {
-    "id": 11,
+    "id": "77778888-9999-aaaa-bbbb-ccccddddeeee",
     "name": "Bootstrap",
     "tag": "bootstrap",
     "link": "https://getbootstrap.com/"
   },
   {
-    "id": 12,
+    "id": "eeeeffff-0000-1111-2222-333344445555",
     "name": "MongoDB",
     "tag": "mongodb",
     "link": "https://www.mongodb.com/"
   },
   {
-    "id": 13,
+    "id": "55556666-7777-8888-9999-aaaabbbbcccc",
     "name": "Git",
     "tag": "git",
     "link": "https://git-scm.com/"
   },
   {
-    "id": 14,
+    "id": "ccccdddd-eeee-ffff-0000-111122223333",
     "name": "Github",
     "tag": "github",
     "link": "https://github.com/"
   },
   {
-    "id": 15,
+    "id": "33334444-5555-6666-7777-88889999aaaa",
     "name": "Docker",
     "tag": "docker",
     "link": "https://www.docker.com/"
   },
   {
-    "id": 16,
+    "id": "aaaabbbb-cccc-dddd-eeee-ffff00001111",
     "name": "Figma",
     "tag": "figma",
     "link": "https://www.figma.com/"
   },
   {
-    "id": 17,
+    "id": "11112222-3333-4444-5555-666677778888",
     "name": "PHP",
     "tag": "php",
     "link": "https://www.php.net/"

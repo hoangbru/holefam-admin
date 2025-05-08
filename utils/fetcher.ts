@@ -14,15 +14,17 @@ const handleApiError = (error: unknown) => {
 const request = async (
   path: string,
   method: Method = "GET",
-  data?: Record<string, unknown>
+  data?: Record<string, unknown> | FormData
 ) => {
-  const config = {
+  const isFormData = data instanceof FormData;
+
+  const config: RequestInit = {
     method,
-    headers: {
-      "Content-Type": "application/json",
-    },
     credentials: "same-origin" as RequestCredentials,
-    ...(method !== "GET" && { body: JSON.stringify(data) }),
+    headers: isFormData ? {} : { "Content-Type": "application/json" },
+    ...(method !== "GET" && {
+      body: isFormData ? data : data ? JSON.stringify(data) : undefined,
+    }),
   };
 
   try {
@@ -30,12 +32,19 @@ const request = async (
 
     if (response.status === 401) {
       try {
-        const refreshResponse = await fetch("/api/auth/refresh", {
+        const refreshConfig = {
           ...config,
           method: "POST",
-        });
+          headers: { "Content-Type": "application/json" },
+        };
+        const refreshResponse = await fetch("/api/auth/refresh", refreshConfig);
         if (refreshResponse.ok) {
           response = await fetch(path, config);
+        } else {
+          if (typeof window !== "undefined") {
+            window.location.href = "/";
+          }
+          throw new Error("Refresh token failed");
         }
       } catch (refreshError) {
         if (typeof window !== "undefined") {
@@ -63,5 +72,5 @@ export const fetcher = (path: string) => request(path);
 export const mutation = (
   path: string,
   method: Method = "POST",
-  data?: Record<string, unknown>
+  data?: Record<string, unknown> | FormData
 ) => request(path, method, data);

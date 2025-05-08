@@ -12,24 +12,25 @@ import {
 } from "@/components/data-table";
 import { Checkbox } from "@/components/ui/checkbox";
 import SkeletonSection from "@/components/skeleton-section";
-import { Badge } from "@/components/ui/badge";
 
-import { Technology } from "@/types/technology";
+import { Project } from "@/types/project";
 import { fetcher, mutation } from "@/utils/fetcher";
+import Link from "next/link";
+import Image from "next/image";
 
-const TechnologiesList = () => {
+const TableList = () => {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState<boolean>(true);
-  const [technologies, setTechnologies] = useState<Technology[]>([]);
+  const [projects, setProjects] = useState<Project[]>([]);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     async function fetchTechnologies() {
       try {
-        const response = await fetcher("/api/technologies");
-        setTechnologies(response);
+        const response = await fetcher("/api/projects");
+        setProjects(response);
       } catch {
-        setError("Failed to fetch technologies");
+        setError("Failed to fetch projects");
       } finally {
         setIsLoading(false);
       }
@@ -40,31 +41,29 @@ const TechnologiesList = () => {
   const handleDelete = async (id: string | number) => {
     setIsLoading(true);
     try {
-      const res = await mutation(`/api/technologies/${id}`, "DELETE");
+      const res = await mutation(`/api/projects/${id}`, "DELETE");
       if (res.error) {
         toast.error(res.error);
       }
-      setTechnologies((prev) =>
-        prev.filter((technology) => technology.id !== id)
-      );
-      toast.success("Technology deleted successfully");
+      setProjects((prev) => prev.filter((project) => project.id !== id));
+      toast.success("Project deleted successfully");
     } catch (err) {
       console.error("Delete failed", err);
-      toast.error("Failed to delete technology");
+      toast.error("Failed to delete project");
     } finally {
       setIsLoading(false);
     }
   };
 
   const redirectToEdit = (id: string | number) => {
-    router.push(`/admin/technologies/${id}/edit`);
+    router.push(`/admin/projects/${id}/edit`);
   };
 
   const handleCopy = (id: string | number) => {
-    console.log("Copying technology with id:", id);
+    console.log("Copying project with id:", id);
   };
 
-  const columns: ColumnDef<Technology>[] = [
+  const columns: ColumnDef<Project>[] = [
     {
       id: "select",
       header: ({ table }) => (
@@ -105,34 +104,95 @@ const TechnologiesList = () => {
       },
     },
     {
-      accessorKey: "link",
+      accessorKey: "image",
       header: ({ column }) => (
-        <DataTableColumnHeader column={column} title="Link" />
+        <DataTableColumnHeader column={column} title="Image" />
       ),
       cell: ({ row }) => {
+        const image = row.getValue("image") as string;
         return (
           <div className="flex space-x-2">
             <span className="max-w-[500px] truncate font-medium">
-              {row.getValue("link")}
+              {image ? (
+                <Image
+                  src={image}
+                  alt="Project Image"
+                  width={100}
+                  height={100}
+                  className="rounded-md object-cover"
+                />
+              ) : (
+                "No Image"
+              )}
             </span>
           </div>
         );
       },
     },
     {
-      accessorKey: "tag",
+      accessorKey: "description",
       header: ({ column }) => (
-        <DataTableColumnHeader column={column} title="Tag" />
+        <DataTableColumnHeader column={column} title="Description" />
       ),
       cell: ({ row }) => {
-        const tag = row.getValue("tag") as string;
         return (
           <div className="flex space-x-2">
             <span className="max-w-[500px] truncate font-medium">
-              {tag && (
-                <Badge className="text-base">
-                  <i className={`bx bxl-${tag}`}></i>
-                </Badge>
+              {row.getValue("description")}
+            </span>
+          </div>
+        );
+      },
+    },
+    {
+      accessorKey: "link",
+      header: ({ column }) => (
+        <DataTableColumnHeader column={column} title="Link" />
+      ),
+      cell: ({ row }) => {
+        const link = row.getValue("link") as string;
+        return (
+          <div className="flex space-x-2">
+            <span className="max-w-[500px] truncate font-medium">
+              {link ? (
+                <Link
+                  href={link}
+                  target="blank"
+                  rel="noopener noreferrer"
+                  className="text-[#0066CC]"
+                >
+                  {link}
+                </Link>
+              ) : (
+                "No Link"
+              )}
+            </span>
+          </div>
+        );
+      },
+    },
+    {
+      accessorKey: "githubLink",
+      header: ({ column }) => (
+        <DataTableColumnHeader column={column} title="Github Link" />
+      ),
+      cell: ({ row }) => {
+        const githubLink = row.getValue("githubLink") as string;
+
+        return (
+          <div className="flex space-x-2">
+            <span className="max-w-[500px] truncate font-medium">
+              {githubLink ? (
+                <Link
+                  href={githubLink}
+                  target="blank"
+                  rel="noopener noreferrer"
+                  className="text-[#0066CC]"
+                >
+                  {githubLink}
+                </Link>
+              ) : (
+                "No Github Link"
               )}
             </span>
           </div>
@@ -160,7 +220,7 @@ const TechnologiesList = () => {
 
   if (isLoading) return <SkeletonSection />;
 
-  return <DataTable data={technologies} columns={columns} />;
+  return <DataTable data={projects} columns={columns} />;
 };
 
-export default TechnologiesList;
+export default TableList;

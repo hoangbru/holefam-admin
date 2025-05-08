@@ -24,7 +24,7 @@ import {
   technologySchema,
 } from "@/schemas/technology-schema";
 
-const FormAddTechnology = () => {
+const FormAdd = () => {
   const router = useRouter();
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
@@ -36,13 +36,14 @@ const FormAddTechnology = () => {
       link: "",
     },
   });
-  
+
   const onSubmit = async (values: TechnologyFormValues) => {
     setIsSubmitting(true);
     try {
       const res = await mutation("/api/technologies", "POST", values);
       if (res.error) {
         toast.error(res.error);
+        return;
       }
       form.reset();
       router.push("/admin/technologies");
@@ -81,9 +82,11 @@ const FormAddTechnology = () => {
             <FormItem>
               <FormLabel className="flex items-center gap-2">
                 <span>Tag</span>
-                <Badge className="text-base">
-                  <i className={`bx bxl-${field.value}`}></i>
-                </Badge>
+                {field.value !== "" ? (
+                  <Badge className="text-base">
+                    <i className={`bx bxl-${field.value}`}></i>
+                  </Badge>
+                ) : null}
               </FormLabel>
               <FormControl>
                 <Input id="tag" placeholder="Example: react" {...field} />
@@ -117,4 +120,4 @@ const FormAddTechnology = () => {
   );
 };
 
-export default FormAddTechnology;
+export default FormAdd;

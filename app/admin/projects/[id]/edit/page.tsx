@@ -1,28 +1,30 @@
 import { Metadata } from "next";
 
 import BreadcrumbSection from "@/components/breadcrumb-section";
-import FormAdd from "./_components/form-add";
+import FormEdit from "../_components/form-edit";
 
 export const metadata: Metadata = {
-  title: "Add New Technology",
+  title: "Edit New Project",
 };
 
-export default function AddNewPage() {
+export default function EditPage({ params }: { params: { id: string } }) {
+  const { id } = params;
+
   return (
     <div className="h-full flex-1 flex-col space-y-8 md:flex">
       <BreadcrumbSection metaTitle={metadata.title} />
       <div className="flex items-center justify-between space-y-2">
         <div>
           <h2 className="text-3xl font-bold tracking-tight">
-            Add New Technology
+            Edit New Project
           </h2>
           <p className="text-muted-foreground">
-            Here&apos;s a form to add a new technology!
+            Here&apos;s a form to edit a project with ID: {id}!
           </p>
         </div>
       </div>
 
-      <FormAdd />
+      <FormEdit id={id} />
     </div>
   );
 }

@@ -18,7 +18,7 @@ export async function generateMetadata() {
     title: t("title"),
     description: t("description"),
     alternates: {
-      canonical: process.env.NEXT_PUBLIC_APP_URL,
+      canonical: process.env.NEXT_PUBLIC_BASE_URL,
     },
     twitter: {
       card: "summary_large_image",

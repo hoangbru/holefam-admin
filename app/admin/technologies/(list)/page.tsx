@@ -3,7 +3,7 @@ import { Metadata } from "next";
 
 import { Button } from "@/components/ui/button";
 import BreadcrumbSection from "@/components/breadcrumb-section";
-import TechnologiesList from "./_components/technologies-list";
+import TableList from "./_components/table-list";
 
 export const metadata: Metadata = {
   title: "Technologies Management",
@@ -31,7 +31,7 @@ export default function TechnologiesManagement() {
         </div>
       </div>
 
-      <TechnologiesList />
+      <TableList />
     </div>
   );
 }

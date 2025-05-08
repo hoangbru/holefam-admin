@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
 import BreadcrumbSection from "@/components/breadcrumb-section";
-import FormEditTechnology from "../_components/form-edit";
+import FormEdit from "../_components/form-edit";
 
 export const metadata: Metadata = {
   title: "Edit New Technology",
 };
 
-export default function ProjectEditPage({
+export default function EditPage({
   params,
 }: {
   params: { id: string };
@@ -28,7 +28,7 @@ export default function ProjectEditPage({
         </div>
       </div>
 
-      <FormEditTechnology id={id} />
+      <FormEdit id={id} />
     </div>
   );
 }

@@ -80,7 +80,6 @@ const FormEdit = ({ id }: FormEditProps) => {
       const res = await mutation(`/api/technologies/${id}`, "PUT", values);
       if (res.error) {
         toast.error(res.error);
-        return;
       }
       form.reset();
       router.push("/admin/technologies");

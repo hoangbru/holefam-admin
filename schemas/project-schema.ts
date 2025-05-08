@@ -8,8 +8,7 @@ export const projectSchema = z.object({
     })
     .nonempty({ message: "Project name is required and cannot be empty" }),
   image: z
-    .string({ required_error: "Image URL is required" })
-    .url({ message: "Image must be a valid URL" }),
+    .string({ required_error: "Image URL is required" }),
   description: z
     .string({ required_error: "Description is required" })
     .nonempty({ message: "Description cannot be empty" }),

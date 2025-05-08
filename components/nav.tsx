@@ -47,13 +47,13 @@ const navItems: NavItem[] = [
     items: [
       {
         title: "List",
-        href: "/projects",
+        href: "/admin/projects",
         description:
           "List of all projects that you have added to your portfolio.",
       },
       {
         title: "Add",
-        href: "/projects/add",
+        href: "/admin/projects/add",
         description: "Add a new project to your portfolio.",
       },
     ],
@@ -81,12 +81,12 @@ const navItems: NavItem[] = [
     items: [
       {
         title: "List",
-        href: "/users",
+        href: "/admin/users",
         description: "List of all users that you have added to your portfolio.",
       },
       {
         title: "Add",
-        href: "/users/add",
+        href: "/admin/users/add",
         description: "Add a new user to your portfolio.",
       },
     ],
@@ -94,12 +94,12 @@ const navItems: NavItem[] = [
   {
     type: "link",
     label: "Contacts",
-    href: "/contacts",
+    href: "/admin/contacts",
   },
   {
     type: "link",
     label: "Settings",
-    href: "/settings",
+    href: "/admin/settings",
   },
 ];
 

@@ -1,7 +1,7 @@
 import { Technology } from "./technology";
 
 export interface Project {
-  id: number;
+  id: string;
   name: string;
   image: string;
   description: string;
