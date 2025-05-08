@@ -100,17 +100,5 @@
     "name": "PHP",
     "tag": "php",
     "link": "https://www.php.net/"
-  },
-  {
-    "id": 18,
-    "name": "sass",
-    "tag": "sass",
-    "link": "https://sass-lang.com/"
-  },
-  {
-    "id": 19,
-    "name": "Sass",
-    "tag": "sass",
-    "link": "https://sass-lang.com/"
   }
 ]

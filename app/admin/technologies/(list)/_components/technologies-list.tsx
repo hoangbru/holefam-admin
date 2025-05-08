@@ -37,32 +37,31 @@ const TechnologiesList = () => {
     fetchTechnologies();
   }, []);
 
-  const handleDelete = async (id: string) => {
+  const handleDelete = async (id: string | number) => {
     setIsLoading(true);
     try {
-      const response = await mutation(`/api/technologies/${id}`, "DELETE");
-      if (response.status === 200) {
-        // setTechnologies((prev) =>
-        //   prev.filter((technology) => technology.id !== id)
-        // );
-        toast.success("Technology deleted successfully");
-      } else {
-        toast.error("Failed to delete technology");
+      const res = await mutation(`/api/technologies/${id}`, "DELETE");
+      if (res.error) {
+        toast.error(res.error);
       }
-      toast.error("Failed to delete technology");
-    } catch {
+      setTechnologies((prev) =>
+        prev.filter((technology) => technology.id !== id)
+      );
+      toast.success("Technology deleted successfully");
+    } catch (err) {
+      console.error("Delete failed", err);
       toast.error("Failed to delete technology");
     } finally {
       setIsLoading(false);
     }
   };
 
-  const redirectToEdit = (id: string) => {
+  const redirectToEdit = (id: string | number) => {
     router.push(`/admin/technologies/${id}/edit`);
   };
 
-  const handleCopy = (id: string) => {
-    router.push(`/admin/technologies/${id}/copy`);
+  const handleCopy = (id: string | number) => {
+    console.log("Copying technology with id:", id);
   };
 
   const columns: ColumnDef<Technology>[] = [
@@ -142,14 +141,16 @@ const TechnologiesList = () => {
     },
     {
       id: "actions",
-      cell: ({ row }) => (
-        <DataTableRowActions
-          row={row}
-          callbackEdit={() => redirectToEdit(row.getValue("id"))}
-          callbackCopy={() => handleCopy(row.getValue("id"))}
-          callbackDelete={() => handleDelete(row.getValue("id"))}
-        />
-      ),
+      cell: ({ row }) => {
+        return (
+          <DataTableRowActions
+            row={row}
+            callbackEdit={() => redirectToEdit(row.original.id)}
+            callbackCopy={() => handleCopy(row.original.id)}
+            callbackDelete={() => handleDelete(row.original.id)}
+          />
+        );
+      },
     },
   ];
 

@@ -80,10 +80,10 @@ const FormEditTechnology = ({ id }: FormEditTechnologyProps) => {
       const res = await mutation(`/api/technologies/${id}`, "PUT", values);
       if (res.error) {
         toast.error(res.error);
-      } else {
-        router.push("/admin/technologies");
-        toast.success("Technology updated successfully");
       }
+      form.reset();
+      router.push("/admin/technologies");
+      toast.success("Technology updated successfully");
     } catch (err) {
       console.error("Submit failed", err);
       toast.error("An error occurred while submitting. Please try again.");
