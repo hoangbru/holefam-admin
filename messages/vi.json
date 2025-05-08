@@ -1,0 +1,68 @@
+{
+  "Metadata": {
+    "title": "Portfolio - Một góc nhỏ của holefam",
+    "description": "holefam – Lập trình viên Front-end đến từ Hà Nội, tạo ra những trải nghiệm web trực quan."
+  },
+  "HomePage": {
+    "navigation": {
+      "overview": "Tổng quan",
+      "about": "Giới thiệu",
+      "skills": "Kỹ năng",
+      "projects": "Dự án",
+      "contact": "Liên hệ"
+    },
+    "overview": {
+      "fe_web_dev_from_Hanoi": "Lập trình viên front-end đến từ Hà Nội",
+      "my_resume": "Hồ sơ của tôi",
+      "download_cv": "Tải xuống CV",
+      "to_scroll_down_for_more": "Kéo xuống để xem thêm"
+    },
+    "about": {
+      "title": "Giới thiệu",
+      "subtitle": "Một số thông tin cơ bản",
+      "full_name": "Họ và tên",
+      "education": "Học vấn",
+      "school": "Trường Đại học Giao thông Vận tải",
+      "location": "Địa chỉ",
+      "description": "Là một Lập trình viên Web Front-end với kinh nghiệm thực tiễn trong việc xây dựng các ứng dụng web chuyên nghiệp, tôi có nền tảng vững chắc về HTML, CSS, JavaScript và các framework front-end hiện đại như React và Vue.js. Tôi là một người giao tiếp tích cực với kinh nghiệm làm việc nhóm và kỹ năng giải quyết vấn đề.",
+      "let_us_talk": "Hãy cùng trò chuyện"
+    },
+    "skills": {
+      "title": "Kỹ năng chuyên môn",
+      "subtitle": "Đây là những công cụ, ngôn ngữ và công nghệ mà tôi sử dụng để tạo ra sản phẩm của mình hằng ngày"
+    },
+    "projects": {
+      "title": "Dự án cá nhân",
+      "subtitle": "Những dự án mà tôi đã thực hiện",
+      "no_results": "Không có kết quả.",
+      "read_more": "Đọc thêm",
+      "show_less": "Ẩn bớt",
+      "qltask": "Trang web quản lý Task, được xây dựng dựa trên Trello sử dụng Next.js 14, PostgreSQL và Prisma",
+      "easy_food": "Dự án tốt nghiệp với sự tham gia của 7 thành viên trong nhóm, tập trung vào phát triển hệ thống đặt đồ ăn tự động mang tên easyFood. Hệ thống cho phép chọn menu tự động thông qua mã QR. React + Typescript + Redux Toolkit được sử dụng cho front-end, và PHP (Laravel framework) + MySQL cho back-end"
+    },
+    "contact": {
+      "title": "Liên hệ với tôi",
+      "subtitle": "Hãy kết nối và thảo luận về dự án của chúng ta!",
+      "name": "Tên",
+      "insert_your_name": "Hãy nhập vào tên của bạn",
+      "email": "Email",
+      "insert_your_email": "Hãy nhập vào địa chỉ email của bạn",
+      "message": "Tin nhắn",
+      "insert_your_message": "Hãy để lại lời nhắn",
+      "send": "Gửi",
+      "contact_successfully": "Gửi yêu cầu thành công",
+      "contact_failed": "Đã có lỗi xảy ra, xin vui lòng thử lại"
+    },
+    "footer": {
+      "copyright": "Được thiết kế & thực hiện bởi {author}"
+    }
+  },
+  "NotFoundPage": {
+    "do_you_feel_disoriented": "Bạn đang lạc lối?"
+  },
+  "Validation": {
+    "required": "Vui lòng nhập {field}",
+    "email_pattern": "Sai định dạng email",
+    "maximum": "Nhập tối đa {num} ký tự"
+  }
+}

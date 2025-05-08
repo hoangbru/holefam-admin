@@ -1,0 +1,10 @@
+export interface User {
+  id: number;
+  username: string;
+  email: string;
+  password: string;
+  avatar: string;
+  role: Role;
+}
+
+export type Role = "admin" | "user";

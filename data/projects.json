@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "QLtask",
+    "image": "/images/qltask.png",
+    "description": "projects.qltask",
+    "link": "https://qltask.onrender.com",
+    "githubLink": "https://github.com/hoangbru/QLtask",
+    "technologies": [
+      {
+        "id": 1,
+        "name": "TypeScript",
+        "tag": "typescript"
+      },
+      {
+        "id": 2,
+        "name": "Next.js",
+        "tag": ""
+      },
+      {
+        "id": 3,
+        "name": "Tailwind CSS",
+        "tag": "tailwind-css"
+      },
+      {
+        "id": 4,
+        "name": "PostgreSQL",
+        "tag": "postgresql"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "easyFood",
+    "image": "/images/easyFood.png",
+    "description": "projects.easy_food",
+    "link": "https://easyfood.firebbq.id.vn/",
+    "githubLink": "",
+    "technologies": [
+      {
+        "id": 1,
+        "name": "TypeScript",
+        "tag": "typescript"
+      },
+      {
+        "id": 2,
+        "name": "React",
+        "tag": "react"
+      },
+      {
+        "id": 3,
+        "name": "Redux",
+        "tag": "redux"
+      },
+      {
+        "id": 4,
+        "name": "PHP",
+        "tag": "php"
+      }
+    ]
+  }
+]

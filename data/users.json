@@ -1,0 +1,26 @@
+[
+  {
+    "id": 2,
+    "username": "user1",
+    "email": "user@example.com",
+    "password": "$2b$10$examplehashedpassword",
+    "role": "user",
+    "avatar": "https://example.com/avatar1.jpg"
+  },
+  {
+    "id": 3,
+    "username": "hoangbru",
+    "email": "hoangbru07@gmail.com",
+    "password": "$2b$10$Nk.61o7d5banKrejthf7LeS.LDD01ZWGkZQlFU6uBdRHkPstHgDcm",
+    "role": "admin",
+    "avatar": "https://example.com/avatar1.jpg"
+  },
+  {
+    "id": 4,
+    "username": "viethoang",
+    "email": "viethoang@gmail.com",
+    "password": "$2b$10$GuJqjT5CXVTRNnBCzKHUp.0ljvd7k9lneJpy9l7gwwJA24INRNDYO",
+    "role": "admin",
+    "avatar": "https://example.com/avatar1.jpg"
+  }
+]

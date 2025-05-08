@@ -1,0 +1,68 @@
+{
+  "Metadata": {
+    "title": "Portfolio - A Little Corner of holefam",
+    "description": "holefam – Front-end developer from Hanoi, crafting intuitive web experiences."
+  },
+  "HomePage": {
+    "navigation": {
+      "overview": "Overview",
+      "about": "About",
+      "skills": "Skills",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "overview": {
+      "fe_web_dev_from_Hanoi": "Front-end web dev from Hanoi",
+      "my_resume": "My Resume",
+      "download_cv": "Download CV",
+      "to_scroll_down_for_more": "To scroll down for more"
+    },
+    "about": {
+      "title": "About Me",
+      "subtitle": "Some infomation about me",
+      "full_name": "Full name",
+      "education": "Education",
+      "school": "University of Transport and Communitications",
+      "location": "Location",
+      "description": "As a Front-end Web Developer with hands-on experience in building professional web applications, I have a strong foundation in HTML, CSS, JavaScript, and modern front-end frameworks such as React and Vue.js. I am an active communicator with experience in teamwork and problem-solving skills.",
+      "let_us_talk": "Let's talk"
+    },
+    "skills": {
+      "title": "My skills",
+      "subtitle": "These are the tools, languages, and technologies that I use to make my product everyday"
+    },
+    "projects": {
+      "title": "Projects",
+      "subtitle": "The projects that I have completed",
+      "no_results": "No results.",
+      "read_more": "Read more",
+      "show_less": "Show less",
+      "qltask": "Task management website, which is built based on the Trello use Next.js 14, PostgreSQL and Prisma",
+      "easy_food": "Graduation project with the participation of 7 team members, focusing on the development of an automated food ordering system named easyFood. The system enables automatic menu selection through QR codes. React + Typescript + Redux Toolkit is employed for the front-end, and PHP (Laravel framework) + MySQL is used for the back-end"
+    },
+    "contact": {
+      "title": "Contact Me",
+      "subtitle": "Let's connect and discuss our project!",
+      "name": "Name",
+      "insert_your_name": "Please enter your name",
+      "email": "Email",
+      "insert_your_email": "Please enter your email address",
+      "message": "Message",
+      "insert_your_message": "Please leave a message",
+      "send": "Send",
+      "contact_successfully": "Request sent successfully",
+      "contact_failed": "Something went wrong, please try again"
+    },
+    "footer": {
+      "copyright": "Designed & created by {author}"
+    }
+  },
+  "NotFoundPage": {
+    "do_you_feel_disoriented": "Do you feel disoriented?"
+  },
+  "Validation": {
+    "required": "Please insert {field}",
+    "email_pattern": "Invalid email format",
+    "maximum": "Enter a maximum of {num} characters"
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "text": {
+    "title": "holefam",
+    "description": "Welcome to my personal website. Here you can find my projects, blog posts, and more.",
+    "keywords": ["portfolio", "blog", "projects"]
+  },
+  "menu": [
+    {
+      "id": 1,
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "id": 2,
+      "name": "About",
+      "url": "/about"
+    },
+    {
+      "id": 3,
+      "name": "Projects",
+      "url": "/projects"
+    },
+    {
+      "id": 4,
+      "name": "Blog",
+      "url": "/blog"
+    },
+    {
+      "id": 5,
+      "name": "Contact",
+      "url": "/contact"
+    }
+  ],
+  "settings": {
+    "siteName": "Phu Thuy Bach Tang",
+    "siteUrl": "https://example.com",
+    "language": "en-US",
+    "themeColor": "#0070f3"
+  },
+  "seo": {
+    "title": "Phu Thuy Bach Tang - Personal Website",
+    "description": "This is the personal website of Phu Thuy Bach Tang, showcasing projects, blog posts, and more.",
+    "keywords": ["portfolio", "blog", "projects"],
+    "author": "Phu Thuy Bach Tang"
+  },
+  "theme": {
+    "image": {
+      "background": "/images/background-a.jpg",
+      "overview": "/images/flag-mtdtgpmnvn.jpg"
+    },
+    "colors": {
+      "primary": "#0070f3",
+      "secondary": "#1a202c",
+      "accent": "#ff4081",
+      "background": "#f7fafc",
+      "text": "#2d3748",
+      "error": "#e53e3e",
+      "success": "#38a169"
+    },
+    "typography": {
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": {
+        "base": "16px",
+        "heading": "24px",
+        "subheading": "20px"
+      }
+    }
+  },
+  "socialLinks": [
+    {
+      "id": 1,
+      "name": "Facebook",
+      "url": "https://www.facebook.com/phuthuybachtang/",
+      "icon": "facebook"
+    },
+    {
+      "id": 2,
+      "name": "Instagram",
+      "url": "https://www.instagram.com/phuthuybachtang/",
+      "icon": "instagram"
+    },
+    {
+      "id": 3,
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/viethoangdev/",
+      "icon": "linkedin"
+    },
+    {
+      "id": 4,
+      "name": "Telegram",
+      "url": "https://t.me/plousdolby",
+      "icon": "telegram"
+    },
+    {
+      "id": 5,
+      "name": "Twitter",
+      "url": "https://x.com/tinhlinh_xanh",
+      "icon": "twitter"
+    },
+    {
+      "id": 6,
+      "name": "Discord",
+      "url": "https://discord.gg/T5tzGZ6Uhg",
+      "icon": "discord-alt"
+    },
+    {
+      "id": 7,
+      "name": "Figma",
+      "url": "https://www.figma.com/@hoangbru",
+      "icon": "figma"
+    },
+    {
+      "id": 8,
+      "name": "Spotify",
+      "url": "https://open.spotify.com/user/31bv5pxmueupktotevqtnngczgvy",
+      "icon": "spotify"
+    },
+    {
+      "id": 9,
+      "name": "YouTube",
+      "url": "https://youtu.be/dQw4w9WgXcQ?si=_pGg1TiZQXcpyo78",
+      "icon": "youtube"
+    }
+  ],
+  "contactInfo": {
+    "email": "viethoangpham25@gmail.com",
+    "github": "https://github.com/hoangbru",
+    "address": "Cau Giay, Hanoi, Viet Nam"
+  },
+  "footer": {
+    "text": "© 2025 Your Company. All rights reserved.",
+    "links": [
+      {
+        "id": 1,
+        "name": "Privacy Policy",
+        "url": "/privacy"
+      },
+      {
+        "id": 2,
+        "name": "Terms of Service",
+        "url": "/terms"
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "Metadata": {
+    "title": "ポートフォリオ - holefamの小さなコーナー",
+    "description": "holefam - ハノイ出身のフロントエンド開発者で、直感的なウェブ体験を創造しています。"
+  },
+  "HomePage": {
+    "navigation": {
+      "overview": "概要",
+      "about": "紹介",
+      "skills": "スキル",
+      "projects": "プロジェクト",
+      "contact": "連絡先"
+    },
+    "overview": {
+      "fe_web_dev_from_Hanoi": "ハノイ出身のフロントエンドウェブ開発者",
+      "my_resume": "私の履歴書",
+      "download_cv": "CVをダウンロード",
+      "to_scroll_down_for_more": "もっと見るにはスクロールダウンしてください"
+    },
+    "about": {
+      "title": "自己紹介",
+      "subtitle": "私についての情報",
+      "full_name": "フルネーム",
+      "education": "学歴",
+      "school": "運輸通信大学",
+      "location": "所在地",
+      "description": "フロントエンドのWeb開発者として、プロフェッショナルなウェブアプリケーション構築の実務経験があり、HTML、CSS、JavaScript、およびReactやVue.jsのような最新のフロントエンドフレームワークに強固な基盤を持っています。チームワークや問題解決のスキルを備えた、積極的なコミュニケーターです。",
+      "let_us_talk": "お話ししましょう"
+    },
+    "skills": {
+      "title": "私のスキル",
+      "subtitle": "これは私が毎日製品を作るために使用するツール、言語、技術です"
+    },
+    "projects": {
+      "title": "プロジェクト",
+      "subtitle": "私が完成させたプロジェクト",
+      "no_results": "結果がありません。",
+      "read_more": "続きを読む",
+      "show_less": "少なく表示",
+      "qltask": "Trelloに基づいて構築されたタスク管理ウェブサイトで、Next.js 14、PostgreSQL、Prismaを使用",
+      "easy_food": "7人のチームメンバーの参加による卒業プロジェクトで、easyFoodという自動フードオーダーシステムの開発に焦点を当てています。このシステムではQRコードを使用して自動的にメニュー選択ができます。フロントエンドにはReact + Typescript + Redux Toolkitが使用され、バックエンドにはPHP（Laravelフレームワーク）+ MySQLが使用されています"
+    },
+    "contact": {
+      "title": "私に連絡してください",
+      "subtitle": "私たちのプロジェクトについてつながり、話し合いましょう！",
+      "name": "名前",
+      "insert_your_name": "あなたの名前を入力してください",
+      "email": "メール",
+      "insert_your_email": "あなたのメールアドレスを入力してください",
+      "message": "メッセージ",
+      "insert_your_message": "メッセージを残してください",
+      "send": "送信",
+      "contact_successfully": "リクエストが正常に送信されました",
+      "contact_failed": "何かがうまくいきませんでした。もう一度お試しください"
+    },
+    "footer": {
+      "copyright": "{author} によって設計および作成されました"
+    }
+  },
+  "NotFoundPage": {
+    "do_you_feel_disoriented": "あなたは道に迷っています?"
+  },
+  "Validation": {
+    "required": "{field}を入力してください",
+    "email_pattern": "無効なメールフォーマット",
+    "maximum": "{num}文字以内で入力してください"
+  }
+}
